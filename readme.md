@@ -4,7 +4,9 @@ Adapted from [A successful Git Branching Model](http://nvie.com/posts/a-successf
 
 ![git model](http://nvie.com/img/git-model@2x.png)
 
-## Welcome to the Master Branch
+This tutorial creates the branching model and provides code examples for developer teams who want to follow the same approach.
+
+## Welcome to the Develop Branch
 
 The central repo holds two main branches with an infinite lifetime:
 
