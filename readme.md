@@ -1,5 +1,9 @@
 # Git Branching Model
 
+Adapted from [A successful Git Branching Model](http://nvie.com/posts/a-successful-git-branching-model/) by Vincent Driessen
+
+![git model](http://nvie.com/img/git-model@2x.png)
+
 ## Welcome to the Master Branch
 
 The central repo holds two main branches with an infinite lifetime:
