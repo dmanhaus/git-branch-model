@@ -1,0 +1,1 @@
+git branch -d hotfix-$1
