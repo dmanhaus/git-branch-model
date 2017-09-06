@@ -45,10 +45,6 @@ When the source code in the develop branch reaches a stable point and is ready t
 
 Therefore, each time when changes are merged back into master, this is a new production release by definition. We tend to be very strict at this, so that theoretically, we could use a Git hook script to automatically build and roll-out our software to our production servers everytime there was a commit on master.
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> release-1.4
 ## Supporting Branches
 
 Next to the main branches master and develop, our development model uses a variety of supporting branches to aid parallel development between team members, ease tracking of features, prepare for production releases and to assist in quickly fixing live production problems. Unlike the main branches, these branches always have a limited life time, since they will be removed eventually.
@@ -62,10 +58,7 @@ The different types of branches we may use are:
 Each of these branches have a specific purpose and are bound to strict rules as to which branches may be their originating branch and which branches must be their merge targets. We will walk through them in a minute.
 
 By no means are these branches “special” from a technical perspective. The branch types are categorized by how we use them. They are of course plain old Git branches.
-<<<<<<< HEAD
-=======
-=======
->>>>>>> release-1.4
+
 ## Feature Branches
 
 ![feature branches](http://nvie.com/img/fb@2x.png)
@@ -165,11 +158,7 @@ After creating a new branch and switching to it, we bump the version number. Her
 
 This new branch may exist there for a while, until the release may be rolled out definitely. During that time, bug fixes may be applied in this branch (rather than on the develop branch). Adding large new features here is strictly prohibited. They must be merged into develop, and therefore, wait for the next big release.
 
-<<<<<<< HEAD
-### Step 4 - Finishing a Release Branch - Merge to Master
-=======
 ### Step 4 - Finishing a Release Branch - Merge to master
->>>>>>> release-1.4
 
 When the state of the release branch is ready to become a real release, some actions need to be carried out. First, the release branch is merged into master (since every commit on master is a new release by definition, remember). Next, that commit on master must be tagged for easy future reference to this historical version. Finally, the changes made on the release branch need to be merged back into develop, so that future releases also contain these bug fixes.
 
@@ -185,11 +174,6 @@ $ git tag -a 1.2
 ```
 This step is automated in [04-merge-release-branch-master.sh](./releases/04-merge-release-branch-master.sh). 
 
-<<<<<<< HEAD
-Pass the version number of the release, without any prefix, as the first and only argument when running the script. (e.g, to create a release branch called "release=1.2", pass "1.2" as the first and only argument when running the script.)
-
->>>>>>> release-1.3
-=======
 Pass the version number of the release, without any prefix, as the first and only argument when running the script. (e.g, to merge the release branch called "release-1.2" into master, pass "1.2" as the first and only argument when running the script.
 
 ### Step 5 - Finishing a Release Branch - Merge to develop
@@ -314,4 +298,3 @@ $ git branch -d hotfix-1.2.1
 Deleted branch hotfix-1.2.1 (was abbe5d6).
 ```
 This step is automated in [10-delete-hotfix-branch.sh](./hotfixes/10-delete-hotfix-branch.sh).
->>>>>>> release-1.4
