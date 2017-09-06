@@ -22,7 +22,7 @@
 
 <!-- /TOC -->
 
-Adapted from [A successful Git Branching Model](http://nvie.com/posts/a-succgitessful-git-branching-model/) by Vincent Driessen
+Adapted from [A successful Git Branching Model](http://nvie.com/posts/a-successful-git-branching-model/) by Vincent Driessen
 
 ![git model](http://nvie.com/img/git-model@2x.png)
 
