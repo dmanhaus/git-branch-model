@@ -22,7 +22,7 @@
 
 <!-- /TOC -->
 
-Adapted from [A successful Git Branching Model](http://nvie.com/posts/a-succgitessful-git-branching-model/) by Vincent Driessen
+Adapted from [A successful Git Branching Model](http://nvie.com/posts/a-successful-git-branching-model/) by Vincent Driessen
 
 ![git model](http://nvie.com/img/git-model@2x.png)
 
@@ -58,6 +58,7 @@ The different types of branches we may use are:
 Each of these branches have a specific purpose and are bound to strict rules as to which branches may be their originating branch and which branches must be their merge targets. We will walk through them in a minute.
 
 By no means are these branches “special” from a technical perspective. The branch types are categorized by how we use them. They are of course plain old Git branches.
+
 ## Feature Branches
 
 ![feature branches](http://nvie.com/img/fb@2x.png)
