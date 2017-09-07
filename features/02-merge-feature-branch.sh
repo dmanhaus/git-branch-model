@@ -1,4 +1,4 @@
-if [ -z "$1"]
+if [ -z "$1" ]
   then 
     echo "MISSING ARGUMENT - Must supply name of feature branch as argument, e.g.: bash features/02-merge-feature-branch.sh [feature-branch-name]"
   else

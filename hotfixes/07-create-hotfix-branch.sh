@@ -1,4 +1,4 @@
-if [ -z "$1"]
+if [ -z "$1" ]
   then 
     echo "MISSING ARGUMENT - Must supply major/minor/hotfix release version number as argument, e.g.: bash features/07-create-hotfix-branch.sh [major release number].[minor rel num].[hotfix rel num]"
   else

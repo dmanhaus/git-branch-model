@@ -1,4 +1,4 @@
-if [ -z "$1"]
+if [ -z "$1" ]
   then 
     echo "MISSING ARGUMENT - Must supply major/minor release version number as argument, e.g.: bash features/03-create-release-branch.sh [major release number].[minor release number]"
   else

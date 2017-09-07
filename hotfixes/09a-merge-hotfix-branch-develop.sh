@@ -1,4 +1,4 @@
-if [ -z "$1"]
+if [ -z "$1" ]
   then 
     echo "MISSING ARGUMENT - Must supply name of hotfix branch as argument, e.g.: bash releases/09a-merge-hotfix-branch-develop.sh hotfix-[major release number].[minor rel num].[hotfix rel num]"
   else
